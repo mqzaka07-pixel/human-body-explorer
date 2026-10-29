@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Human Body Explorer - PPLG SMK Rus</title>
+    <!-- Menghubungkan ke file style.css -->
+    <link rel="stylesheet" href="saraf.css">
+    <!-- Google Fonts Poppins -->
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">🧠 Neuro<span>Motion</span></div>
+        <nav>
+            <a href="#">Beranda</a>
+            <a href="#materi">Materi</a>
+            <a href="#simulasi">Alur Gerak</a>
+            <a href="#kuis">Kuis Interaktif</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Digital Human Body Explorer</h1>
+        <p>Jelajahi keajaiban koordinasi Sistem Saraf dan Sistem Gerak Manusia secara interaktif dan visual.</p>
+        <a href="#materi" class="btn-primary">Mulai Belajar</a>
+    </section>
+
+    <!-- Materi Section -->
+    <section id="materi" class="container">
+        <h2>Materi Inti</h2>
+        <div class="grid-materi">
+            <div class="card">
+                <h3>Sistem Saraf</h3>
+                <p>Terdiri atas <strong>Otak</strong> (pusat koordinasi), <strong>Sumsum Tulang Belakang</strong> (jalur impuls & refleks), serta <strong>Saraf Tepi</strong> yang menghubungkan rangsangan ke seluruh tubuh.</p>
+            </div>
+            <div class="card">
+                <h3>Sistem Gerak</h3>
+                <p>Kerja sama harmonis antara <strong>Tulang</strong> (penopang tubuh), <strong>Sendi</strong> (penghubung fleksibel), dan <strong>Otot</strong> (berkontraksi & berelaksasi menghasilkan gerakan).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simulasi Section -->
+    <section id="simulasi" class="container bg-light">
+        <h2>Simulasi Alur Gerak Refleks</h2>
+        <p style="text-align: center; margin-bottom: 15px;">Klik tombol di bawah untuk melihat simulasi alur saat tangan menyentuh benda panas:</p>
+        <div style="text-align: center;">
+            <button id="btnSimulasi" class="btn-primary">Jalankan Simulasi Alur</button>
+        </div>
+        <div id="simulasiBox" class="simulasi-box hidden">
+            <p id="teksSimulasi">Menunggu stimulasi...</p>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="kuis" class="container">
+        <h2>Kuis Interaktif Sistem Saraf & Gerak</h2>
+        
+        <!-- Box Pertanyaan -->
+        <div id="question-box">
+            <p id="question-text" style="font-weight: 600; color: #1e1e2f;"></p>
+            <div id="options-container">
+                <!-- Tombol pilihan ganda akan di-generate oleh JS -->
+            </div>
+        </div>
+
+        <!-- Box Hasil (Awalnya Tersembunyi) -->
+        <div id="result-box" class="hidden">
+            <h3>Kuis Selesai! 🎉</h3>
+            <p id="score-text" style="font-size: 1.2rem; margin: 15px 0; font-weight: bold; color: #4e73df;"></p>
+            <button id="restart-btn" class="btn-primary">Ulangi Kuis</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Digital Human Body Explorer | Dibuat oleh Muhammad Qodli Zaka (10 PPLG)</p>
+    </footer>
+
+    <!-- Menghubungkan ke file script.js -->
+    <script src="saraf.js"></script>
+</body>
+</html>
